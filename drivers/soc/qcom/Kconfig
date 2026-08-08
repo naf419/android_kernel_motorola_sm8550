@@ -33,6 +33,13 @@ config ARC_DTB
 	help
 		Only include Motorola Arc device specific device tree.
 
+config FOGONA_DTB
+    depends on MMI_DEVICE_DTBS
+    default n
+    bool "Motorola Mobility Rtwo Device DTB"
+    help
+        Only include Motorola Fogona device specific device tree.
+
 config OBERON_DTB
 	depends on MMI_DEVICE_DTBS
 	default n
