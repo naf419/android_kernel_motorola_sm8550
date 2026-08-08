@@ -1,4 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
+#ifndef AUTOGROUP_H
+#define AUTOGROUP_H
+
 #ifdef CONFIG_SCHED_AUTOGROUP
 
 struct autogroup {
@@ -58,3 +61,5 @@ static inline int autogroup_path(struct task_group *tg, char *buf, int buflen)
 }
 
 #endif /* CONFIG_SCHED_AUTOGROUP */
+
+#endif // AUTOGROUP_H
